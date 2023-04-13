@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="80dp">
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Entrer un message custom"/>
+
+    <Button
+        android:id="@+id/buttonAddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_message1"
+        android:text="Bonjour çava?"
+        android:textSize="18sp"
+       />
+
+    <!-- Second Text View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_message2"
+        android:text="Bienvenue!"
+        android:textSize="18sp"
+
+        android:layout_marginTop="16dp"/>
+
+    <!-- Third Text View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_message3"
+        android:text="Bonne anniversaire!"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- recyclerview Widget -->
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>
+
+
+
